@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".abtpoker">
+
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="494dp"
+        android:layout_height="792dp"
+        android:alpha=".88"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"
+        app:srcCompat="@drawable/acee" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Widget.Material3.Snackbar.TextView"
+        android:layout_width="268dp"
+        android:layout_height="59dp"
+        android:background="#E68FAC"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/maitree_bold"
+        android:text="ABOUT POKER"
+        android:textAlignment="center"
+        android:textColor="#BC0E0E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="319dp"
+        android:layout_height="584dp"
+        android:translationY="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:fontFamily="@font/maitree_bold"
+                android:text="GAME TABLE"
+                android:textColor="#D10303"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/pokrtable" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:fontFamily="@font/maitree_bold"
+                android:text="GAMEPLAY"
+                android:textColor="#D10303"
+                android:textSize="20sp"
+                android:translationY="-30sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:text=" In casual play, the right to deal a hand typically rotates among the players and is marked by a token called a dealer button (or buck). In a casino, a house dealer handles the cards for each hand, but the button (typically a white plastic disk) is rotated clockwise among the players to indicate a nominal dealer to determine the order of betting. The cards are dealt clockwise around the poker table, one at a time.
+
+
+\n\nOne or more players are usually required to make forced bets, usually either an ante or a blind bet (sometimes both). The dealer shuffles the cards, the player on the chair to his or her right cuts, and the dealer deals the appropriate number of cards to the players one at a time, beginning with the player to his or her left. Cards may be dealt either face-up or face-down, depending on the variant of poker being played. After the initial deal, the first of what may be several betting rounds begins. Between rounds, the players' hands develop in some way, often by being dealt additional cards or replacing cards previously dealt. At the end of each round, all bets are gathered into the central pot.
+
+
+\n\nAt any time during a betting round, if one player bets, no opponents choose to call (match) the bet, and all opponents instead fold, the hand ends immediately, the bettor is awarded the pot, no cards are required to be shown, and the next hand begins. This is what makes bluffing possible. Bluffing is a primary feature of poker, distinguishing it from other vying games and from other games that use poker hand rankings.
+
+
+\n\nAt the end of the last betting round, if more than one player remains, there is a showdown, in which the players reveal their previously hidden cards and evaluate their hands. The player with the best hand according to the poker variant being played wins the pot. A poker hand comprises five cards; in variants where a player has more than five cards available to them, only the best five-card combination counts. There are 10 different kinds of poker hands, such as straight flush and four of a kind."
+                android:textColor="#FFFCFD"
+                android:textColorHighlight="#FFFFFF"
+                android:translationY="-29sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:fontFamily="@font/maitree_bold"
+                android:text="POKER HAND PRIORITY CHART"
+                android:textColor="#D10303"
+                android:textSize="20sp"
+                android:translationY="-28sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:translationY="-36sp"
+                app:srcCompat="@drawable/pokrhands" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

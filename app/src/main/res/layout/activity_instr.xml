@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".instr">
+
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="494dp"
+        android:layout_height="792dp"
+        android:alpha=".9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"
+        app:srcCompat="@drawable/acee" />
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Widget.Material3.Snackbar.TextView"
+        android:layout_width="268dp"
+        android:layout_height="59dp"
+        android:background="#E68FAC"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/maitree_bold"
+        android:text="INSTRUCTIONS"
+        android:textAlignment="center"
+        android:textColor="#BC0E0E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="319dp"
+        android:layout_height="584dp"
+        android:translationY="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:fontFamily="@font/maitree_bold"
+                android:text="MODES"
+                android:textColor="#D10303"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:text="The game consists of 2 gameplay Modes:\n\n1.)BEGINNER:\n\nYou are dealt 2 cards along with 3 other slots with 2 cards each and you can bet a certain amount of money based on if you have a better chance than the 3 others with respect to the 5 cards placed for bet.
+                \n\n\n2.)ADVANCED:\n\nIn this mode insted of 3 computer slots there are 5 computer slots and you have a time limit in which you have to win as many rounds as possible by not losing too much money.\n\n\nThe intent of this game is not to simulate the perfect poker experience but to instill a gambler spirit and intelligence in the player."
+                android:textColor="#FFFCFD"
+                android:textColorHighlight="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
